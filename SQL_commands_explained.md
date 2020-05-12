@@ -4,43 +4,60 @@
 - ; Is the end of commands
 
 ***
+```SQL
 CREATE DATABASE [database name];
+```
 - creates database
-***
 
+***
+```SQL
 USE [name of database];
+```
 - changes database to name of database
-***
 
+***
 " * "
 - The star means all, this can not be used by it self, but very useful in other commands
-***
 
+***
+```SQL
 CREATE TABLE [table name]
 
 (
 
-  [column name] data type,
+  [column name] [data type],
 
   PRIMARY KEY [column name],
 
 
-[other table name] [data type] FOREIGN KEY REFERENCES [table name] (column name)
+[column name this table] [data type] FOREIGN KEY REFERENCES [table name](column name)
 
 );
-- creates table
+```
+- codereates table
 - How to asign primary and foreign keys
+- Be careful on format, you need the column name alredy in there
 ***
 
-DROP TABLE [table name]
+```SQL
+DROP TABLE [table name];
+```
 - Deletes table
 ***
 
+```SQL
 SP_HELP [table name];
-- g
+```
+- Lets you check data types for table.
 ***
 
+```SQL
 ALTER TABLE [table name] ADD [column name] [data type];  
+```
 - Adds a column
 ***
-ALTER TABLE <table name> DROP COLUMN <column name>; - deletes column
+
+```SQL
+ALTER TABLE [table name] DROP COLUMN [column name];
+```
+- Deletes column

@@ -55,11 +55,11 @@ Many to Many
 
 ## Types of keys
 
-Primary
+PRIMARY KEY
 
-- Is a uniquely identifier for each record in a table, (normally first column)
-- Most table should have a primary key,​
-- In a table a column can have more than one primary key.​
+- Is a uniquely identifier for each record in a table (normally first column)
+- Most table should have a primary key
+- In a table a column can have more than one primary key
 - It can be automatically create by DBMS ​
 - They must be unique​
 - They must have an entry, must contain data​
@@ -67,13 +67,21 @@ Primary
 - Tables are linked by unique IDs ​
 - A foreign key is a unique ID in another table
 
-Foren keys
+FOREIGN KEY
 
 - Natural relationships exist between tables in most databases structures, foreign keys are used to create solid relationships​
 - Foreign keys ensures that the row information in a table a corresponds to the correct row of the information in table b.​
 - The constraint is used to prevent action that would destroy links between tables​
 - It prevents  invalid information to be added in​
 - There is no uniqueness constraint for a foreign key
+
+COMPSITES KEY
+
+-  When you have 2 primary keys in one table and both are need for uniquely identifies each row.
+
+CANADIDATE KEY
+
+- Canadidate keys are all unque keys that can be one PRIMARY KEY, the other ones are considered as Canadidate KEYS
 
 
 ## Structured Query Language
