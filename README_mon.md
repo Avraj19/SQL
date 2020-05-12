@@ -57,7 +57,7 @@ Many to Many
 
 Primary
 
-- Is a uniquely identifier for each record in a table, normally first column ​
+- Is a uniquely identifier for each record in a table, (normally first column)
 - Most table should have a primary key,​
 - In a table a column can have more than one primary key.​
 - It can be automatically create by DBMS ​
