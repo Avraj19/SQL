@@ -75,3 +75,11 @@ INNER JOIN Suppliers s
 ON p.SupplierID = S.SupplierID
 GROUP BY p.SupplierID
 ````
+- You can connect with multiplue tables as long as there is a primary and forgien key link.
+```SQL
+SELECT o.OrderID, o.OrderDate, o.Freight,
+e.FirstName +' '+ e.LastName AS 'Employee Name', c.CompanyName
+FROM Orders o
+INNER JOIN Employees e ON o.EmployeeID = e.EmployeeID
+INNER JOIN Customers c ON o.CustomerID = o.CustomerID
+```
