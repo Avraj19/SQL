@@ -188,7 +188,7 @@ WHERE c.CategoryName LIKE '[BS%]'
 In this case it will display any CategoryName that starts with B or S
 
 ***
-
+## IN opperator
 ```SQL
 SELECT *
 FROM Customers c
@@ -197,7 +197,7 @@ WHERE c.Region IN ('WA','SP')
 You can look for specifice things
 
 ***
-
+## Between
 ```SQL
 SELECT *
 FROM EmployeeTerritories
@@ -205,7 +205,7 @@ WHERE TerritoryID BETWEEN 06800 AND 09999
 ```
 
 ***
-##
+## charlist
 
 ```SQL
 SELECT COUNT(o.OrderID) AS "Number of Orders"
@@ -220,4 +220,4 @@ WHERE o.EmployeeID LIKE '[57]'
 SELECT e.FirstName +' '+ e.LastName AS "Employee Name"
 FROM Employees e
 ```
-Just adds 2 string together, in this case adds first and last name and the AS opperator is used for alias 
+Just adds 2 string together, in this case adds first and last name and the AS opperator is used for alias
